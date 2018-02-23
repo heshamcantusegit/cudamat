@@ -109,7 +109,7 @@ class CUDA_build_ext(build_ext):
             # This could be done by a NVCCCompiler class for all platforms.
         spawn(cmd, search_path, verbose, dry_run)
 
-setup(name="cudamat-double-precision",
+setup(name="cudamat_double_precision",
       version="0.1",
       description="Performs linear algebra computation on the GPU via CUDA",
       ext_modules=[cudamat_ext, cudalearn_ext],
