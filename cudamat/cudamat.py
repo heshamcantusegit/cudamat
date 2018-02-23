@@ -20,83 +20,83 @@ _cudamat = load_library('libcudamat')
 
 _cudamat.get_last_cuda_error.restype = ct.c_char_p
 _cudamat.get_last_clib_error.restype = ct.c_char_p
-_cudamat.cublas_init.restype = ct.c_int
-_cudamat.cublas_shutdown.restype = ct.c_int
-_cudamat.cuda_set_device.restype = ct.c_int
-_cudamat.init_random.restype = ct.c_int
+_cudamat.cublas_init.restype = ct.c_double
+_cudamat.cublas_shutdown.restype = ct.c_double
+_cudamat.cuda_set_device.restype = ct.c_double
+_cudamat.init_random.restype = ct.c_double
 
-_cudamat.init_empty.restype = ct.c_int
-_cudamat.reshape.restype = ct.c_int
-_cudamat.copy_to_host.restype = ct.c_int
-_cudamat.allocate_device_memory = ct.c_int
-_cudamat.copy_to_device.restype = ct.c_int
-_cudamat.copy_on_device.restype = ct.c_int
-_cudamat.free_device_memory.restype = ct.c_int
+_cudamat.init_empty.restype = ct.c_double
+_cudamat.reshape.restype = ct.c_double
+_cudamat.copy_to_host.restype = ct.c_double
+_cudamat.allocate_device_memory = ct.c_double
+_cudamat.copy_to_device.restype = ct.c_double
+_cudamat.copy_on_device.restype = ct.c_double
+_cudamat.free_device_memory.restype = ct.c_double
 
-_cudamat.get_slice.restype = ct.c_int
-_cudamat.get_row_slice.restype = ct.c_int
-_cudamat.set_row_slice.restype = ct.c_int
-_cudamat.copy_transpose.restype = ct.c_int
-_cudamat.get_vector_slice.restype = ct.c_int
-_cudamat.fill_with_rand.restype = ct.c_int
-_cudamat.fill_with_randn.restype = ct.c_int
+_cudamat.get_slice.restype = ct.c_double
+_cudamat.get_row_slice.restype = ct.c_double
+_cudamat.set_row_slice.restype = ct.c_double
+_cudamat.copy_transpose.restype = ct.c_double
+_cudamat.get_vector_slice.restype = ct.c_double
+_cudamat.fill_with_rand.restype = ct.c_double
+_cudamat.fill_with_randn.restype = ct.c_double
 
-_cudamat.add_col_vec.restype = ct.c_int
-_cudamat.add_col_mult.restype = ct.c_int
-_cudamat.add_row_vec.restype = ct.c_int
-_cudamat.mult_by_col_vec.restype = ct.c_int
-_cudamat.mult_by_row_vec.restype = ct.c_int
-_cudamat.divide_by_col_vec.restype = ct.c_int
-_cudamat.divide_by_row_vec.restype = ct.c_int
+_cudamat.add_col_vec.restype = ct.c_double
+_cudamat.add_col_mult.restype = ct.c_double
+_cudamat.add_row_vec.restype = ct.c_double
+_cudamat.mult_by_col_vec.restype = ct.c_double
+_cudamat.mult_by_row_vec.restype = ct.c_double
+_cudamat.divide_by_col_vec.restype = ct.c_double
+_cudamat.divide_by_row_vec.restype = ct.c_double
 
-_cudamat.less_than.restype = ct.c_int
-_cudamat.less_than_scalar.restype = ct.c_int
-_cudamat.greater_than.restype = ct.c_int
-_cudamat.greater_than_scalar.restype = ct.c_int
-_cudamat.equals.restype = ct.c_int
-_cudamat.equals_scalar.restype = ct.c_int
-_cudamat.minimum.restype = ct.c_int
-_cudamat.minimum_scalar.restype = ct.c_int
-_cudamat.maximum.restype = ct.c_int
-_cudamat.maximum_scalar.restype = ct.c_int
-_cudamat.min_by_axis.restype = ct.c_int
-_cudamat.max_by_axis.restype = ct.c_int
-_cudamat.argmin_by_axis.restype = ct.c_int
-_cudamat.argmax_by_axis.restype = ct.c_int
-_cudamat.sign.restype = ct.c_int
-_cudamat.apply_sigmoid.restype = ct.c_int
-_cudamat.apply_tanh.restype = ct.c_int
-_cudamat.apply_soft_threshold.restype = ct.c_int
-_cudamat.apply_abs.restype = ct.c_int
-_cudamat.apply_log_1_plus_exp.restype = ct.c_int
-_cudamat.apply_log.restype = ct.c_int
-_cudamat.apply_exp.restype = ct.c_int
-_cudamat.apply_gamma.restype = ct.c_int
-_cudamat.apply_lgamma.restype = ct.c_int
-_cudamat.apply_sqrt.restype = ct.c_int
-_cudamat.apply_pow.restype = ct.c_int
-_cudamat.apply_pow_matrix.restype = ct.c_int
-_cudamat.reciprocal.restype = ct.c_int
+_cudamat.less_than.restype = ct.c_double
+_cudamat.less_than_scalar.restype = ct.c_double
+_cudamat.greater_than.restype = ct.c_double
+_cudamat.greater_than_scalar.restype = ct.c_double
+_cudamat.equals.restype = ct.c_double
+_cudamat.equals_scalar.restype = ct.c_double
+_cudamat.minimum.restype = ct.c_double
+_cudamat.minimum_scalar.restype = ct.c_double
+_cudamat.maximum.restype = ct.c_double
+_cudamat.maximum_scalar.restype = ct.c_double
+_cudamat.min_by_axis.restype = ct.c_double
+_cudamat.max_by_axis.restype = ct.c_double
+_cudamat.argmin_by_axis.restype = ct.c_double
+_cudamat.argmax_by_axis.restype = ct.c_double
+_cudamat.sign.restype = ct.c_double
+_cudamat.apply_sigmoid.restype = ct.c_double
+_cudamat.apply_tanh.restype = ct.c_double
+_cudamat.apply_soft_threshold.restype = ct.c_double
+_cudamat.apply_abs.restype = ct.c_double
+_cudamat.apply_log_1_plus_exp.restype = ct.c_double
+_cudamat.apply_log.restype = ct.c_double
+_cudamat.apply_exp.restype = ct.c_double
+_cudamat.apply_gamma.restype = ct.c_double
+_cudamat.apply_lgamma.restype = ct.c_double
+_cudamat.apply_sqrt.restype = ct.c_double
+_cudamat.apply_pow.restype = ct.c_double
+_cudamat.apply_pow_matrix.restype = ct.c_double
+_cudamat.reciprocal.restype = ct.c_double
 
-_cudamat.add_elementwise.restype = ct.c_int
-_cudamat.subtract_elementwise.restype = ct.c_int
-_cudamat.divide_elementwise.restype = ct.c_int
-_cudamat.mult_elementwise.restype = ct.c_int
-_cudamat.assign_scalar.restype = ct.c_int
-_cudamat.mult_by_scalar.restype = ct.c_int
-_cudamat.divide_by_scalar.restype = ct.c_int
-_cudamat.add_scalar.restype = ct.c_int
+_cudamat.add_elementwise.restype = ct.c_double
+_cudamat.subtract_elementwise.restype = ct.c_double
+_cudamat.divide_elementwise.restype = ct.c_double
+_cudamat.mult_elementwise.restype = ct.c_double
+_cudamat.assign_scalar.restype = ct.c_double
+_cudamat.mult_by_scalar.restype = ct.c_double
+_cudamat.divide_by_scalar.restype = ct.c_double
+_cudamat.add_scalar.restype = ct.c_double
 
 _cudamat.euclid_norm.restype = ct.c_float
 _cudamat.manhattan_norm.restype = ct.c_float
-_cudamat.selectRows.restype = ct.c_int
-_cudamat.setSelectedRows.restype = ct.c_int
+_cudamat.selectRows.restype = ct.c_double
+_cudamat.setSelectedRows.restype = ct.c_double
 _cudamat.vdot.restype = ct.c_float
-_cudamat.dot.restype = ct.c_int
+_cudamat.dot.restype = ct.c_double
 
-_cudamat.where.restype = ct.c_int
+_cudamat.where.restype = ct.c_double
 
-_cudamat.correlate.restype = ct.c_int
+_cudamat.correlate.restype = ct.c_double
 
 
 def deprecated(func):
@@ -176,11 +176,11 @@ def generate_exception(err_code, **kwargs):
 class cudamat(ct.Structure):
     _fields_ = [('data_host', ct.POINTER(ct.c_float)),
                 ('data_device', ct.POINTER(ct.c_float)),
-                ('on_device', ct.c_int),
-                ('on_host', ct.c_int),
-                ('size', ct.c_int * 2),
-                ('is_trans', ct.c_int),
-                ('owns_data', ct.c_int)]
+                ('on_device', ct.c_double),
+                ('on_host', ct.c_double),
+                ('size', ct.c_double * 2),
+                ('is_trans', ct.c_double),
+                ('owns_data', ct.c_double)]
 
 
 class rnd_struct(ct.Structure):
@@ -227,8 +227,8 @@ class CUDAMatrix(object):
             _cudamat.init_from_array(
                 self.p_mat,
                 array.ctypes.data_as(ct.POINTER(ct.c_float)),
-                ct.c_int(array.shape[0]),
-                ct.c_int(array.shape[1]))
+                ct.c_double(array.shape[0]),
+                ct.c_double(array.shape[1]))
 
             if copy_to_device:
                 err_code = _cudamat.copy_to_device(self.p_mat)
@@ -272,7 +272,7 @@ class CUDAMatrix(object):
             cudamat_path = cudamat_path.encode(sys.getfilesystemencoding())
 
         err_code = _cudamat.init_random(CUDAMatrix.rnd_state_p,
-                                        ct.c_int(seed),
+                                        ct.c_double(seed),
                                         cudamat_path)
         if err_code:
             if sys.version_info >= (3,):
@@ -391,7 +391,7 @@ class CUDAMatrix(object):
         Set the transposedness flag to is_trans.
         """
 
-        _cudamat.set_transpose(self.p_mat, ct.c_int(1 * is_trans))
+        _cudamat.set_transpose(self.p_mat, ct.c_double(1 * is_trans))
 
     def slice(self, first_col, last_col, include_host=False):
         """
@@ -404,13 +404,13 @@ class CUDAMatrix(object):
         if self.mat.size[0] == 1 or self.mat.size[1] == 1:
             err_code = _cudamat.get_vector_slice(self.p_mat,
                                                  ct.pointer(mat),
-                                                 ct.c_int(first_col),
-                                                 ct.c_int(last_col))
+                                                 ct.c_double(first_col),
+                                                 ct.c_double(last_col))
         else:
             err_code = _cudamat.get_slice(self.p_mat,
                                           ct.pointer(mat),
-                                          ct.c_int(first_col),
-                                          ct.c_int(last_col))
+                                          ct.c_double(first_col),
+                                          ct.c_double(last_col))
 
         if err_code:
             raise generate_exception(err_code)
@@ -467,8 +467,8 @@ class CUDAMatrix(object):
 
         err_code = _cudamat.get_row_slice(self.p_mat,
                                           target.p_mat,
-                                          ct.c_int(start),
-                                          ct.c_int(end))
+                                          ct.c_double(start),
+                                          ct.c_double(end))
         if err_code:
             raise generate_exception(err_code)
 
@@ -480,7 +480,7 @@ class CUDAMatrix(object):
         """
 
         err_code = _cudamat.set_row_slice(mat.p_mat, self.p_mat,
-                                          ct.c_int(start), ct.c_int(end))
+                                          ct.c_double(start), ct.c_double(end))
         if err_code:
             raise generate_exception(err_code)
 
@@ -800,7 +800,7 @@ class CUDAMatrix(object):
                 target = empty((m, 1))
 
         err_code = _cudamat.min_by_axis(self.p_mat, target.p_mat,
-                                        ct.c_int(axis))
+                                        ct.c_double(axis))
         if err_code:
             raise generate_exception(err_code)
 
@@ -824,7 +824,7 @@ class CUDAMatrix(object):
                 target = empty((m, 1))
 
         err_code = _cudamat.max_by_axis(self.p_mat, target.p_mat,
-                                        ct.c_int(axis))
+                                        ct.c_double(axis))
         if err_code:
             raise generate_exception(err_code)
 
@@ -849,7 +849,7 @@ class CUDAMatrix(object):
                 target = empty((m, 1))
 
         err_code = _cudamat.argmin_by_axis(self.p_mat, target.p_mat,
-                                           ct.c_int(axis))
+                                           ct.c_double(axis))
         if err_code:
             raise generate_exception(err_code)
 
@@ -874,7 +874,7 @@ class CUDAMatrix(object):
                 target = empty((m, 1))
 
         err_code = _cudamat.argmax_by_axis(self.p_mat, target.p_mat,
-                                           ct.c_int(axis))
+                                           ct.c_double(axis))
         if err_code:
             raise generate_exception(err_code)
 
@@ -1130,7 +1130,7 @@ class CUDAMatrix(object):
         """
         Returns the L2 norm of the matrix flattened to a vector.
         """
-        err_code = ct.c_int(0)
+        err_code = ct.c_double(0)
         res = _cudamat.euclid_norm(self.p_mat, ct.byref(err_code))
 
         if err_code:
@@ -1142,7 +1142,7 @@ class CUDAMatrix(object):
         """
         Returns the L1 norm of the matrix flattened to a vector.
         """
-        err_code = ct.c_int(0)
+        err_code = ct.c_double(0)
         res = _cudamat.manhattan_norm(self.p_mat, ct.byref(err_code))
 
         if err_code:
@@ -1209,8 +1209,8 @@ def empty(shape):
     """
 
     mat = cudamat()
-    err_code = _cudamat.init_empty(ct.pointer(mat), ct.c_int(shape[0]),
-                                   ct.c_int(shape[1]))
+    err_code = _cudamat.init_empty(ct.pointer(mat), ct.c_double(shape[0]),
+                                   ct.c_double(shape[1]))
 
     if err_code:
         raise generate_exception(err_code)
@@ -1302,7 +1302,7 @@ def vdot(m1, m2):
     Compute the vector dot product of matrices m1 and m2.
     """
 
-    err_code = ct.c_int(0)
+    err_code = ct.c_double(0)
     res = _cudamat.vdot(m1.p_mat, m2.p_mat, ct.byref(err_code))
 
     if err_code:
@@ -1542,7 +1542,7 @@ def cuda_set_device(dev_id):
     Selects the CUDA device with the given ID.
     """
 
-    err_code = _cudamat.cuda_set_device(ct.c_int(dev_id))
+    err_code = _cudamat.cuda_set_device(ct.c_double(dev_id))
     if err_code:
         raise generate_exception(err_code)
 
