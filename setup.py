@@ -109,13 +109,13 @@ class CUDA_build_ext(build_ext):
             # This could be done by a NVCCCompiler class for all platforms.
         spawn(cmd, search_path, verbose, dry_run)
 
-setup(name="cudamat",
-      version="0.3",
+setup(name="cudamat-double-precision",
+      version="0.1",
       description="Performs linear algebra computation on the GPU via CUDA",
       ext_modules=[cudamat_ext, cudalearn_ext],
       packages=find_packages(exclude=['examples', 'test']),
       include_package_data=True,
       package_data={'cudamat': ['rnd_multipliers_32bit.txt']},
-      author="Volodymyr Mnih",
-      url="https://github.com/cudamat/cudamat",
+      author="Volodymyr Mnih, Husham Hassan",
+      url="https://github.com/heshamcantusegit/cudamat",
       cmdclass={'build_ext': CUDA_build_ext})
