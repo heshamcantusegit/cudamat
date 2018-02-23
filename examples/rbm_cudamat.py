@@ -1,7 +1,7 @@
 from __future__ import division
 import time
 import numpy as np
-import cudamat_double_precision as cm
+import cudamat as cm
 import util
 
 # initialize CUDA

@@ -5,8 +5,8 @@ from __future__ import division
 import pdb
 import time
 import numpy as np
-import cudamat_double_precision as cm
-from cudamat_double_precision import learn as cl
+import cudamat as cm
+from cudamat import learn as cl
 import util
 
 # initialize CUDA
