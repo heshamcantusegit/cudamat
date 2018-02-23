@@ -1,7 +1,7 @@
 from __future__ import print_function, division
 import sys
 import numpy as np
-import cudamat as cmt
+import cudamat_double_precision as cmt
 import time
 import timeit
 from inspect import getmodule, getmembers, isfunction

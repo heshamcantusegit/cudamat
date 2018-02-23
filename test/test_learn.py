@@ -1,7 +1,7 @@
 import pdb
 import numpy as np
 import nose
-import cudamat as cm
+import cudamat_double_precision as cm
 
 def setup():
     cm.cublas_init()

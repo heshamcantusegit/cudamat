@@ -3,7 +3,7 @@ import os
 import ctypes as ct
 import numpy as np
 
-from cudamat import load_library, generate_exception
+from cudamat_double_precision import load_library, generate_exception
 
 _cudalearn = load_library('libcudalearn')
 
